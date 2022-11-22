@@ -76,7 +76,7 @@ return;
           }
         else
           {
-          alert("password must contain alplabets and numeric values");
+          alert("password must contain small alplabets and numeric values");
           return;
           }
         
