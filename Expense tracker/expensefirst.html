@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript form</title>
+        <link rel="stylesheet" href="expensetracker.css"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="expensefirst.js"></script>
+    </head>
+    <body>
+        <div class="form ms-5 mt-5 " id="expForm">
+            <label for="amount">Enter the amount</label><br>
+             <input type="number" name="amount" placeholder="amount" id="amount"/><br><br>
+        <span>Enter the type</span><br>
+        <input type="radio" id="debit" name="type" value="debit">
+    <label for="debit">Debit</label><br>
+        <input type="radio" id="credit" name="type" value="credit">
+    <label for="credit">Credit</label><br><br>
+        
+        <span>Enter the spendby </span><br>
+        <input type="radio" id="cash" name="type-payment" value="cash">
+    <label for="cash">Cash</label><br>
+        <input type="radio" id="cheque" name="type-payment" value="cheque">
+    <label for="cheque">cheque</label><br><br>
+
+    <label for="spendondate">Enter the date the amount spend on </label><br>
+    <input type="date" name="spendondate" placeholder="Date spend on"    id="spendOnDate" /><br><br>
+      
+    <label for="reason">Reason for amount spend on</label><br>
+    <input type="text" name="reason" placeholder="reason" id="reason"/><br><br>
+        <button onclick="budgetDetails()">Add Income/Expense detail</button><br><br>
+
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Spend By</th>
+            <th>Date</th>
+            <th>Reason</th>
+        
+        </tr>
+    </thead>
+    <tbody id="display"></tbody>
+</table>
+ </body>
+    </html>

@@ -1,0 +1,43 @@
+.top{
+    display:flex;
+    justify-content:space-around;
+    background:#042159;
+margin-bottom: 0px!important;
+color:#0869A6;
+border:5px solid #042159 !important; 
+
+}
+ .menuoption li{
+ list-style: none;
+ margin-top: 10px;
+ font-weight: bold; 
+
+}
+
+.menuoption li a{
+    text-decoration: none;
+}
+
+.container{
+    width: 580px !important;
+    margin: 0 auto;
+    
+}
+.form{
+    border:2px solid #042159 !important; 
+    color:#0869A6;
+    font-weight: bold;
+    font-size: 15px;
+}
+.setcolor{
+  border-color: darkslategray !important;
+    color:3px solid darkslategray !important;
+  
+}
+.setbutton{
+    background:#042159;   
+    color:#0869A6;
+    border-color: #042159 !important;
+    font-weight: bold;
+    font-size: 15px;
+}

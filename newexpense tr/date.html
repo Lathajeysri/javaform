@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript form</title>
+        <link rel="stylesheet" href="date.css"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="new.js"></script>
+    </head>
+    <body>
+ 
+        <div class="container border box">
+
+            <h3 class="setheader" >Records</h3>
+            <hr/>  <!--to bring border-->
+            <div class="form setfont">
+        <label for="startDate">Start Date </label><br>
+<input type="date" name="startDate" placeholder="Select the date"    id="startDate" /><br><br>
+
+<label for="endDate">Enter the end Date </label><br>
+<input type="date" name="endDate" placeholder="Select the date"    id="endDate" /><br><br>
+<button onclick="getDetails()" class="setbutton">Get Details</button><br><br>
+
+            </div>  <!--end of form-->
+<table class="table table-bordered">
+    <thead class="sethead">
+        <tr>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Spend By</th>
+            <th>Date</th>
+            <th>Reason</th>
+        
+        </tr>
+    </thead>
+    <tbody id="display" class="setbody"></tbody>
+
+</table>
+</div>
+ </body>
+    </html>
