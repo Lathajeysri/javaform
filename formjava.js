@@ -98,11 +98,13 @@ erasetext();
 function displayDetails(){
 let list=""
     personarr.forEach(element=>{
-       list=list+"<tr>"+"<td>"+element.name +"</td>"+"<td>"+element.email+"</td>"+"<td>"+element.mobile+"</td>"+"<td>"+element.gender+"</td>"+"<td>"+element.age+"</td>"+"<td>"+element.password+"</td>"+"</tr>";
+       list=list+"<tr>"+"<td>"+element.name +"</td>"+"<td>"+element.email+"</td>"+"<td>"+element.mobile+"</td>"+"<td>"+element.gender+"</td>"+"<td>"+element.age+"</td>"+"<td>"+element.password+"</td>"+"<td>"+"<button onclick=deleteRow(this)>"+"Delete"+"</button>"+"</td>"+"</tr>";
     });
     document.getElementById('display').innerHTML=list;  
 
 }
+
+
 function erasetext(){
     document.getElementById('name').value="";
     document.getElementById('email').value="";
@@ -110,4 +112,8 @@ function erasetext(){
     document.getElementById('gender').value="";
     document.getElementById('age').value="";
     document.getElementById('password').value="";
+ }
+ function deleteRow(r){
+    let delrow=r.parentNode.parentNode.rowIndex;
+    console.log(delrow);
  }
